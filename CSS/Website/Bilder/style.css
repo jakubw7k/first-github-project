@@ -40,7 +40,7 @@ body{
 
 }
 #showcase{
-    background-image:url(/Website/Bilder/Abstract_minimalistic_picture.jpg);
+    background-image:url(Abstract_minimalistic_picture.jpg);
     background-position: center right;
     min-height: 300px;
     margin-bottom: 30px;
