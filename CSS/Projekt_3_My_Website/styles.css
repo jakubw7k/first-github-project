@@ -187,7 +187,7 @@ footer{
 }
 h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 }
 .subheader{
     text-align: center;
@@ -203,6 +203,9 @@ ul{
 
 .section__description--wrapper{
     width: 100%;
+}
+img{
+    width: auto;
 }
 .about__img--wrapper{
     width: 100%;
@@ -226,5 +229,8 @@ footer{
 
 .footer__links{
     margin-bottom: 24px;
+}
+.footer__copyright{
+    text-align: center;
 }
 }
