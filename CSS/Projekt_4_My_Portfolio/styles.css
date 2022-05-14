@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6, span {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 p {
@@ -78,8 +78,8 @@ li {
   padding: 0 12px;
 }
 
-.text--purple {
-  color: #6030b1;
+.text--color {
+  color: #1f52b1;
 }
 
 /* für jede zweite "section", setze graues Hintergrund */
@@ -115,7 +115,7 @@ nav {
 }
 
 .nav__link--anchor-primary {
-  background-color: #6030b1;
+  background-color: #1f52b1;
   padding: 8px 20px;
   border-radius: 50px;
   color: white;
@@ -123,22 +123,27 @@ nav {
 }
 
 .nav__link--anchor-primary:hover {
-  background-color: #5d3eff;
+  background-color: #2871f7;
 }
 
 .personal__logo {
   font-size: 24px;
-  color: #6030b1;
+  color: #1f52b1;
   margin: 0 12px;
   font-weight: bold
 }
 
 /* ABOUT ME */
 
+
 #about-me {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.about-me__links{
+  color: #1f52b1;
 }
 
 .about-me__info {
@@ -153,6 +158,14 @@ nav {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+}
+
+.about-me__picture {
+  width: 100%;
+
+  /* Improving my own picture */
+  transform: scale(1.0);
+  padding-right: 0px;
 }
 
 .about-me__picture--mask {
@@ -177,13 +190,7 @@ nav {
   }
 }
 
-.about-me__picture {
-  width: 100%;
 
-  /* Improving my own picture */
-  transform: scale(1.5);
-  padding-top: 8px;
-}
 
 .about-me__info--title {
   margin-bottom: 16px;
@@ -403,11 +410,12 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8% 0;
+  padding: 30px 0;
+  
 }
 
 .footer__logo--img {
-  width: 70px;
+  width: 130px;
   height: 70px;
 }
 
@@ -451,7 +459,7 @@ footer {
   }
 
   .language {
-    width: calc(100% / 3);
+    width: calc(100% / 2);
   }
 
   .project__description--para {
@@ -465,7 +473,7 @@ footer {
 }
 
 /* SMALL PHONES */
-@media (max-width: 480px) {
+@media (max-width: 555px) {
   .nav__link:not(:last-child) {
     display: none;
   }
