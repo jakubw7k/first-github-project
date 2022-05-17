@@ -68,7 +68,7 @@ li{
 
 .nav__link--primary{
     border: 2px solid #7342d6;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
 .nav__link--primary:hover{
