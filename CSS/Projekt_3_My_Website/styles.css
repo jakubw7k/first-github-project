@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,7 +10,7 @@
 nav {
     height: 70px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     padding: 0 16px;
     background-color: #cafdff;
@@ -23,39 +24,46 @@ header {
     align-items: center;
     justify-content: center;
 }
-h1{
+
+h1 {
     font-size: 72px;
 }
+
 .subheader {
-font-size: 36px;
-margin: 16px 0 24px 0;
+    font-size: 36px;
+    margin: 16px 0 24px 0;
 }
-button{
+
+button {
     background-color: #05c7cf;
     color: white;
     border: none;
     padding: 8px 16px;
-    font-size:  24px;
+    font-size: 24px;
     cursor: pointer;
 }
-a{
+
+a {
     color: #000;
     font-size: 24px;
     font-weight: 700;
-    
+
 }
-.logo{
+
+.logo {
     width: 300px;
 }
 
-ul{
+ul {
     display: flex;
 }
-li{
+
+li {
     list-style-type: none;
     padding-left: 16px;
 }
-.row{
+
+.row {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
@@ -77,11 +85,11 @@ ABOUT
 
 */
 
-#about{
+#about {
     background-color: #f8ffdc;
 }
 
-h2{
+h2 {
     font-size: 60px;
     text-align: center;
     margin-bottom: 24px;
@@ -92,21 +100,26 @@ h2{
     justify-content: center;
     align-items: center;
 }
-.about__img--wrapper{
+
+.about__img--wrapper {
     width: 40%;
 }
-img{
+
+img {
     width: 100%;
 }
-.section__description--wrapper{
+
+.section__description--wrapper {
     width: 60%;
 }
-.about__img--wrapper, 
-.section__description--wrapper{
+
+.about__img--wrapper,
+.section__description--wrapper {
     padding: 0 24px;
 
 }
-.section__description--para{
+
+.section__description--para {
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 24px;
@@ -128,10 +141,11 @@ CONTACT
 
 */
 
-#contact{
+#contact {
     background-color: #dce9ff;
 }
-form{ 
+
+form {
     width: 100%;
     max-width: 600px;
     display: flex;
@@ -139,7 +153,9 @@ form{
     margin: 0 auto;
     padding: 0 24px;
 }
-input, textarea{
+
+input,
+textarea {
     margin-bottom: 24px;
     font-style: 20px;
     padding: 6px 12px;
@@ -151,93 +167,107 @@ FOOTER
 
 */
 
-footer{
+footer {
     background-color: #aaf5ff;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.footer__logo{
+
+.footer__logo {
     max-width: 480px;
     margin-bottom: 16px;
 }
 
-.footer__links{
+.footer__links {
     margin-bottom: 32px;
 }
-.footer__link{
+
+.footer__link {
     padding: 0 16px;
 }
+
 /* Alles bis 728px Breite, wird CSS aktiviert, wenn es mehr als 728 ist, wird CSS ignoriert */
 
 /* SMALL PHONES, TABLETS,LARGE SMARTPHONES */
 
-@media(max-width: 728px){
-.row {
-    flex-direction: column;
-}
-header{
-    min-height: 700px;
-}
+@media(max-width: 728px) {
+    .row {
+        flex-direction: column;
+    }
 
-.home_description {
-    margin-bottom: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-.home__description--button{
-   max-width: 240px;
-}
-h1 {
-    text-align: center;
-    font-size: 40px;
-}
-.subheader{
-    text-align: center;
-    font-size: 28px;
-}
-.header_image{
-    height: auto;
-}
-ul{
-    display: none;
-}
+    header {
+        min-height: 700px;
+    }
 
-.section__description{
-    flex-direction: column;
-}
+    .home_description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.section__description--wrapper{
-    width: 100%;
-}
-img{
-    width: 100%;
-}
-.about__img--wrapper{
-    width: 100%;
-}
-/* Vertauscht die Positionen in der Kolumne  Discord Logo ist jetzt unten*/
-#discord .section__description{
-    flex-direction: column-reverse;
-}
-footer{
-    padding: 48px 24px;
-}
+    .home__description--button {
+        max-width: 240px;
+    }
 
-.footer__logo{
-    max-width: 360px;
-}
+    h1 {
+        text-align: center;
+        font-size: 40px;
+    }
 
-.footer__link{
-    padding: 0 4px;
-    font-size: 18px;
-}
+    .subheader {
+        text-align: center;
+        font-size: 28px;
+    }
 
-.footer__links{
-    margin-bottom: 24px;
-}
-.footer__copyright{
-    text-align: center;
-}
+    .header_image {
+        height: auto;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .section__description {
+        flex-direction: column;
+    }
+
+    .section__description--wrapper {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .about__img--wrapper {
+        width: 100%;
+    }
+
+    /* Vertauscht die Positionen in der Kolumne  Discord Logo ist jetzt unten*/
+    #discord .section__description {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        padding: 48px 24px;
+    }
+
+    .footer__logo {
+        max-width: 360px;
+    }
+
+    .footer__link {
+        padding: 0 4px;
+        font-size: 18px;
+    }
+
+    .footer__links {
+        margin-bottom: 24px;
+    }
+
+    .footer__copyright {
+        text-align: center;
+    }
 }
