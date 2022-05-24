@@ -368,7 +368,7 @@ nav {
   transform: translateY(100%);
   max-width: 550px;
   z-index: 3;
-  opacity: 0;
+  opacity: 0;/**/
   transition: transform 450ms, opacity 300ms;
 }
 
