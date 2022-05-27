@@ -392,13 +392,26 @@ p {
 
 /* PLANS */
 
-.plans__container {
+#plans {
   height: 100vh;
   text-align: center;
+  position: relative;
 }
 
 .plans {
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.plans__conainer{
+ 
 }
 
 .plans__head {
@@ -406,9 +419,10 @@ p {
 }
 
 .plans__row {
-  max-width: 1600px;
+  margin: 0 auto;
+  max-width: 1280px;
   align-items: center;
-  justify-content: center;
+
 }
 
 
@@ -433,8 +447,15 @@ p {
 
 .allPlans {
   display: flex;
+  justify-content: space-between;
 
 
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
 }
 
 .plan__leftSide,
@@ -448,8 +469,9 @@ p {
   text-align: center;
   margin-top: 40px;
   color: #1A202c;
-  max-width: 24rem;
-  margin: 40px auto 0 auto;
+  max-width: 22rem;
+  margin: 40px auto 0 0;
+  padding: 8px 32px 0 32px;
 }
 
 .topBar {
@@ -471,8 +493,6 @@ p {
 .topBarLeft {
   background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
-
-.plan__leftSide {}
 
 .plan__header {
   align-items: center;
@@ -502,8 +522,8 @@ p {
 }
 
 .plan__features {
-  margin: 0 -32px;
-  padding: 32px;
+  margin: 0px 0px;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #e5e7eb;
@@ -512,8 +532,6 @@ p {
 .plan__mainFeature {
   font-size: 20px;
   font-weight: 700;
-
-
 }
 
 .plan__feature {
@@ -530,7 +548,7 @@ p {
   padding: 32px 64px;
 }
 
-.plan__buynow--btn{
+.plan__buynow--btn-seablue{
   border: transparent;
   background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
   --tw-translate-x: 0;
@@ -550,5 +568,90 @@ p {
   font-size: 0.875rem;
   max-width: 192px;
   color: white;
+  font-weight: 500;
+}
+
+
+.plan__middleSide{
+  background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+  color: white;
+  margin: 40px 40px 0 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.price__middle {
+  font-size: 48px;
+  margin: 4px 0;
+  font-weight: 700;
+}
+.duration__middle{
+  font-weight: 500;
+}
+
+.plan__middle--mainFeature{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.plan__middle--feature {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #e2e8e2;
+}
+
+.plan__buynow--btn-blue{
+  border: transparent;
+  background: white;
+  color: #6415FF;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  font-size: 0.875rem;
+  max-width: 192px;
+  font-weight: 500;
+}
+
+
+.plan__rightSide{
+  margin-right: 40px;
+}
+
+.topBarRight{
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.plan__buynow--btn-red{
+  border: transparent;
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+  color: white;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  font-size: 0.875rem;
+  max-width: 192px;
   font-weight: 500;
 }
