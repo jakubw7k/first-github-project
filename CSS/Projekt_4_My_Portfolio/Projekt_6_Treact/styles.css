@@ -431,4 +431,69 @@ text-align: center;
 
 .allPlans{
   display: flex;
+
 }
+
+.plan__leftSide, .plan__middleSide, .plan__rightSide{
+  border: 1px transparent;
+  border-radius: 8px;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.topBar{
+  border: 1px transparent #a0aec0;
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 8px;
+}
+
+.plan__leftSide{
+  margin-right: 40px;
+}
+
+.topBarLeft{
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__leftSide{
+
+}
+
+.plan__header{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+  line-height: 1.625;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.name{
+  font-size: 20px;
+  font-weight: 700;
+  color: #1A202c;
+}
+
+.price{
+  font-size: 48px;
+  margin: 4px 0;
+  font-weight: 700;
+  color: #1A202c;
+}
+
+.duration{
+ font-size: 16px;
+ font-weight: 700;
+ color: #a0aec0;
+}
+
+
