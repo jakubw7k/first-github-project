@@ -49,7 +49,7 @@ row {
 
 ul {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .nav__links {
@@ -79,8 +79,8 @@ ul {
 }
 
 .nav__logo--btn {
-  font-size: 16px;
-  padding: 12px 32px;
+  font-size: 14px;
+  padding: 8px 24px;
 }
 
 li {
@@ -104,6 +104,7 @@ h2 {
 h6 {
   font-size: 20px;
   color: #243e63;
+  font-weight: 500;
 }
 
 p {
@@ -217,6 +218,7 @@ p {
 
 
 .services__subheading {
+  letter-spacing: 0.1em;
   font-weight: 700;
   font-size: 16px;
 }
@@ -356,6 +358,7 @@ p {
 
 .getStarted__head--subheading {
   font-size: 16px;
+  letter-spacing: 0.1em;
 }
 
 .getStarted__head {
@@ -364,7 +367,7 @@ p {
 }
 
 .getStarted__list {
-  margin-top: 28px;
+  margin-top: 12px;
 }
 
 .getStarted__listItem {
@@ -387,7 +390,7 @@ p {
 .getStarted__paragraph {
   font-size: 14px;
   margin: 12px 0 0;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* PLANS */
@@ -410,8 +413,8 @@ p {
   padding-bottom: 5rem;
 }
 
-.plans__conainer{
- 
+.plans__container {
+
 }
 
 .plans__head {
@@ -442,14 +445,13 @@ p {
 .plans__subheading {
   font-weight: 700;
   font-size: 16px;
+  letter-spacing: 0.1em;
 
 }
 
 .allPlans {
   display: flex;
   justify-content: space-between;
-
-
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -548,7 +550,7 @@ p {
   padding: 32px 64px;
 }
 
-.plan__buynow--btn-seablue{
+.plan__buynow--btn-seablue {
   border: transparent;
   background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
   --tw-translate-x: 0;
@@ -572,7 +574,7 @@ p {
 }
 
 
-.plan__middleSide{
+.plan__middleSide {
   background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
   color: white;
   margin: 40px 40px 0 0;
@@ -585,11 +587,12 @@ p {
   margin: 4px 0;
   font-weight: 700;
 }
-.duration__middle{
+
+.duration__middle {
   font-weight: 500;
 }
 
-.plan__middle--mainFeature{
+.plan__middle--mainFeature {
   font-size: 20px;
   font-weight: 700;
 }
@@ -601,7 +604,7 @@ p {
   color: #e2e8e2;
 }
 
-.plan__buynow--btn-blue{
+.plan__buynow--btn-blue {
   border: transparent;
   background: white;
   color: #6415FF;
@@ -625,15 +628,15 @@ p {
 }
 
 
-.plan__rightSide{
+.plan__rightSide {
   margin-right: 40px;
 }
 
-.topBarRight{
+.topBarRight {
   background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
-.plan__buynow--btn-red{
+.plan__buynow--btn-red {
   border: transparent;
   background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
   color: white;
@@ -654,4 +657,109 @@ p {
   font-size: 0.875rem;
   max-width: 192px;
   font-weight: 500;
+}
+
+
+/* FOOTER */
+
+#footer{
+  background-color: rgb(100, 21, 255);
+  margin: 0px -32px -34px -32px;
+  padding: 48px 0 0px 0;
+  height: 500px;
+}
+
+.footer__row{
+  padding-top: 3rem;
+  margin: 0 32px 0 32px;
+}
+
+.footer__container{
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.footer__fiveColumns{
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding-bottom:4rem;
+border-bottom: 0.5px solid #91919180;
+}
+
+.footer__column{
+  
+  margin: 48px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  width: calc(100%/5);
+  align-items: center;
+}
+
+.column__heading{
+  font-size: 16px;
+  color: #F7FAFC;
+  font-weight: 700;
+}
+.column__unorderedList{
+margin-top: 1.5rem;
+}
+
+.column__link{
+  font-size: 14px;
+  color: #F7FAFC;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.footer__threeColumns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top:4rem;
+  border-top: 1px solid #91919180;
+  margin-bottom:  40px;
+  padding-bottom:  40px;
+}
+
+.threeColumns__logo{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 24px;
+  align-items: center;
+  color: #243E63;
+}
+
+.footer__logo{
+    width: 32px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 12px 0 0;
+    border: 2px solid #F7FAFC;
+    background-color: #F7FAFC;
+    border-radius: 2px;
+}
+
+.footer__text{
+  font-size:20px;
+  color: #F7FAFC;
+}
+
+.footer__paragraph{
+  font-size: 16px;
+  color: #cbd5e0;
+}
+
+.threeColumns__socialLinks{
+  display: flex;
+  color: black; 
+}
+
+.threeColumns__socialLink{
+margin-right:16px;
+background-color: #F7FAFC;
+display: inline-block;
+border-radius: 60px;
+  padding: 0.4em 0.5em;
 }
