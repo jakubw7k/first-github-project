@@ -149,10 +149,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: solid 2px lightgray;
+  border: solid 2px rgb(229, 231, 235);
   border-radius: 100px;
   flex-wrap: wrap;
   max-height: 73px;
+
 }
 
 .template__Email--input {
@@ -160,6 +161,8 @@ p {
   background-color: transparent;
   font-size: 16px;
   outline: none;
+  font-weight: 500;
+  color: rgb(229, 231, 235);
 }
 
 .template__getstarted--btn {
