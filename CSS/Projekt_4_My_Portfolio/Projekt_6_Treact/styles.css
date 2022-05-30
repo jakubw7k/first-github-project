@@ -62,11 +62,22 @@ ul {
 .nav__link {
   margin: 0 20px;
   color: rgb(36, 62, 99);
+  border-bottom: 10px solid transparent;
+  padding-bottom: 2px;
+}
+
+.link__hover-effect:hover {
+  --tw-text-opacity: 1;
+  color: rgba(100, 21, 255, var(--tw-text-opacity));
+  --tw-border-opacity: 1;
+  border-bottom: 2px solid;
+  border-color: rgba(100, 21, 255, var(--tw-border-opacity))
 }
 
 .nav__link--login {
   margin: 0 24px 0 48px;
   color: rgb(36, 62, 99);
+  padding-bottom: 2px;
 }
 
 .button-purple {
@@ -78,9 +89,19 @@ ul {
   border-radius: 100px;
 }
 
+.button-purple:hover {
+  cursor: pointer;
+  background-color: rgba(80, 17, 204)
+}
+
+.button-purple:active {
+  border: solid rgb(117, 181, 218);
+}
+
 .nav__logo--btn {
   font-size: 14px;
   padding: 8px 24px;
+  border-color: transparent;
 }
 
 li {
@@ -140,43 +161,79 @@ p {
 }
 
 .template__paragraph {
-  font-size: 16px;
+  font-size: 18px;
+  color: rgb(36, 62, 99);
   margin: 32px 0;
+  font-weight: 100;
 }
 
 .template__action--fields {
-  padding-left: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: solid 2px rgb(229, 231, 235);
-  border-radius: 100px;
-  flex-wrap: wrap;
-  max-height: 73px;
-
+  position: relative;
+  max-width: 28rem;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .template__Email--input {
-  border: none;
-  background-color: transparent;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 9999px;
+  width: 100%;
+  font-weight: 400;
+  transition-duration: 300ms;
+  border: 2px solid #e5e7eb;
   font-size: 16px;
-  outline: none;
-  font-weight: 500;
-  color: rgb(229, 231, 235);
+  min-height: 68px;
+  outline:none;
 }
 
-.template__getstarted--btn {
-  margin: 8px 8px 8px 0;
-  padding: 16px 40px;
+.template__Email--input::placeholder {
+  color: #a0aec0;
+}
 
+.template__Email--input:focus{
+ border: 2px solid #6415FF;
+}
+.template__Email--input:hover{
+  border: solid 2px;   
+  border-color: rgba(160,174,192) ;
+} 
+
+.template__getstarted--btn {
+  position: absolute;
+  min-width: 160px;
+  min-height: 52px;
+  max-height: 52px;
   font-size: 16px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(100, 21, 255, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(247, 250, 252, var(--tw-text-opacity));
+  font-weight: 700;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 9999px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition-duration: 300ms;
+  border: transparent;
 }
 
 .template__twoBottomColumns {
   margin: 80px 0 0;
   align-items: flex-end;
 }
-
 
 .customers__logo {
   width: 100%;
@@ -219,7 +276,6 @@ p {
   font-weight: normal;
 }
 
-
 .services__subheading {
   letter-spacing: 0.1em;
   font-weight: 700;
@@ -254,7 +310,6 @@ p {
   padding: 1.25rem;
   align-items: flex-start;
 }
-
 
 .service__description {
   margin: 8px 0 0 16px;
@@ -315,7 +370,7 @@ p {
   font-size: 18px;
   width: 148px;
   height: 48px;
-
+  border-color: transparent;
 }
 
 .qualityWork__rightSide {
@@ -416,9 +471,7 @@ p {
   padding-bottom: 5rem;
 }
 
-.plans__container {
-
-}
+.plans__container {}
 
 .plans__head {
   text-align: center;
@@ -428,7 +481,6 @@ p {
   margin: 0 auto;
   max-width: 1280px;
   align-items: center;
-
 }
 
 
@@ -665,34 +717,34 @@ p {
 
 /* FOOTER */
 
-#footer{
+#footer {
   background-color: rgb(100, 21, 255);
   margin: 0px -32px -34px -32px;
   padding: 48px 0 0px 0;
   height: 500px;
 }
 
-.footer__row{
+.footer__row {
   padding-top: 3rem;
   margin: 0 32px 0 32px;
 }
 
-.footer__container{
+.footer__container {
   margin: 0 auto;
   max-width: 1280px;
 }
 
-.footer__fiveColumns{
-margin: 0 auto;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-padding-bottom:4rem;
-border-bottom: 0.5px solid #91919180;
+.footer__fiveColumns {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+  border-bottom: 0.5px solid #91919180;
 }
 
-.footer__column{
-  
+.footer__column {
+
   margin: 48px 0 0 0;
   display: flex;
   flex-direction: column;
@@ -700,33 +752,34 @@ border-bottom: 0.5px solid #91919180;
   align-items: center;
 }
 
-.column__heading{
+.column__heading {
   font-size: 16px;
   color: #F7FAFC;
   font-weight: 700;
 }
-.column__unorderedList{
-margin-top: 1.5rem;
+
+.column__unorderedList {
+  margin-top: 1.5rem;
 }
 
-.column__link{
+.column__link {
   font-size: 14px;
   color: #F7FAFC;
   font-weight: 500;
   margin-top: 12px;
 }
 
-.footer__threeColumns{
+.footer__threeColumns {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top:4rem;
+  padding-top: 4rem;
   border-top: 1px solid #91919180;
-  margin-bottom:  40px;
-  padding-bottom:  40px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
-.threeColumns__logo{
+.threeColumns__logo {
   display: flex;
   justify-content: space-around;
   margin-right: 24px;
@@ -734,35 +787,37 @@ margin-top: 1.5rem;
   color: #243E63;
 }
 
-.footer__logo{
-    width: 32px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 12px 0 0;
-    border: 2px solid #F7FAFC;
-    background-color: #F7FAFC;
-    border-radius: 2px;
+.footer__logo {
+  width: 32px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 12px 0 0;
+  border: 2px solid #F7FAFC;
+  background-color: #F7FAFC;
+  border-radius: 2px;
 }
 
-.footer__text{
-  font-size:20px;
+.footer__text {
+  font-size: 20px;
   color: #F7FAFC;
 }
 
-.footer__paragraph{
+.footer__paragraph {
   font-size: 16px;
   color: #cbd5e0;
+  font-weight: 500;
 }
 
-.threeColumns__socialLinks{
+.threeColumns__socialLinks {
   display: flex;
-  color: black; 
+
 }
 
-.threeColumns__socialLink{
-margin-right:16px;
-background-color: #F7FAFC;
-display: inline-block;
-border-radius: 60px;
+.threeColumns__socialLink {
+  margin-right: 16px;
+  background-color: #F7FAFC;
+  display: inline-block;
+  border-radius: 60px;
   padding: 0.4em 0.5em;
+  color: black;
 }
