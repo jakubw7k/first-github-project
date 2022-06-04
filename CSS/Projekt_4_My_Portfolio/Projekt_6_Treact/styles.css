@@ -60,6 +60,7 @@ p {
   color: white;
   border-radius: 100px;
   transition: all 300ms ease;
+  cursor: pointer;
 }
 
 .button-purple:hover {
@@ -69,6 +70,105 @@ p {
 
 .button-purple:active {
   border: solid rgb(117, 181, 218);
+}
+
+/* MENU BACKDROP */
+
+.btn__menu {
+  background-color: transparent;
+  font-size: 40px;
+  border: none;
+  color: #243E63;
+  display: none;
+  transition: all 300ms ease;
+}
+
+.btn__menu:hover{
+  color: rgb(100, 21, 255);
+  cursor: pointer;
+}
+
+.menu__backdrop {  
+  position: absolute;
+  background-color:white;
+  top: 2.5%;
+  left: 2.5%;
+  right: 2.5%;
+  bottom: 50%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  visibility: hidden;
+  transition: all 300ms ease;
+  opacity: 0;
+  border: 1px solid #cbd5e0;
+  border-radius: 16px;
+  /*transform: translate(100%); */
+
+ /*
+  z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 1.5rem 1rem;
+    padding: 2rem;
+    border: 1px solid #718096;
+    border-width: 1px ;
+    text-align: center;
+    border-radius: 0.5rem;
+    --tw-text-opacity: 1;
+    color: rgba(26,32,44,var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(255,255,255,var(--tw-bg-opacity)); */
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0);
+}
+
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.menu__list {
+  padding: 32px 0;
+}
+
+.menu__link {
+  color: rgb(36, 62, 99);
+  font-size: 40px;
+  border: 2px;
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+.menu__link--hover-effect{
+
+}
+
+.btn__menu--close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 8px;
+  color: #243E63;;
 }
 
 
@@ -132,7 +232,7 @@ p {
 }
 
 
-.nav__logo--btn {
+.nav__logo--btn, .menu__logo--btn {
   font-size: 14px;
   padding: 8px 24px;
   border-color: transparent;
@@ -512,7 +612,6 @@ p {
 .allPlans {
   display: flex;
   justify-content: space-between;
-  display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
@@ -523,17 +622,20 @@ p {
 .plan__leftSide,
 .plan__middleSide,
 .plan__rightSide {
-  border: 1px transparent;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
   border-radius: 8px;
   position: relative;
   flex-direction: column;
-  width: 100%;
+ 
   text-align: center;
   margin-top: 40px;
   color: #1A202c;
-  max-width: 22rem;
+  max-width: 24rem;
   margin: 40px auto 0 0;
   padding: 8px 32px 0 32px;
+  --tw-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
 }
 
 .topBar {
@@ -546,6 +648,7 @@ p {
   left: 0px;
   right: 0px;
   height: 8px;
+  z-index: 99;
 }
 
 .plan__leftSide {
@@ -581,6 +684,7 @@ p {
   font-size: 16px;
   font-weight: 700;
   color: #a0aec0;
+  letter-spacing: 0.1em;
 }
 
 .plan__features {
@@ -589,6 +693,7 @@ p {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #e5e7eb;
+  font-weight: 500;
 }
 
 .plan__mainFeature {
@@ -600,7 +705,6 @@ p {
   margin-top: 20px;
   font-size: 16px;
   color: #718096;
-  font-weight: 500;
 }
 
 .plan__action {
@@ -658,6 +762,7 @@ p {
 
 .duration__middle {
   font-weight: 500;
+  letter-spacing: 0.1em;
 }
 
 .plan__middle--mainFeature {
@@ -668,7 +773,7 @@ p {
 .plan__middle--feature {
   margin-top: 20px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   color: #e2e8e2;
 }
 
@@ -829,4 +934,66 @@ p {
 .threeColumns__socialLink:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(203,213,224,var(--tw-bg-opacity));
+}
+
+/*  SMALLER MONITORS 
+
+@media (max-width: 1280px) {
+
+  #plans{
+    min-height: 2050px;
+  }
+  .allPlans {
+    flex-direction: column;
+    min-height: 1900px;
+}
+}*/
+
+
+/* TABLETS, SMALLER MONITORS */
+
+@media (max-width: 1024px) {
+#template__container {
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: stretch;
+  height: calc(100vh + 100px);
+}
+
+.template__row{
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  min-height: 100px;
+  align-items: center;
+}
+
+.template__leftside, .template__rightside {
+  width: 60%;
+  max-width: 32rem;
+}
+
+#plans{
+  min-height: 2050px;
+}
+.allPlans {
+  flex-direction: column;
+  min-height: 1900px;
+}
+
+.btn__menu {
+  display: block;
+
+}
+.nav__links {
+  display:none;
+}
+
+
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+
+@media (max-width: 772px) {
+
 }
