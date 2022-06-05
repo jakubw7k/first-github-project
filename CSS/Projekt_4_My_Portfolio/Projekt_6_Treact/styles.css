@@ -271,7 +271,7 @@ p {
   margin-right: 0px;
 }
 
-.template__Email--input {
+.template__email--input {
   padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -283,17 +283,18 @@ p {
   font-size: 16px;
   min-height: 68px;
   outline: none;
+  color: #243E63;
 }
 
-.template__Email--input::placeholder {
+.template__email--input::placeholder {
   color: #a0aec0;
 }
 
-.template__Email--input:focus {
+.template__email--input:focus {
   border: 2px solid #6415FF;
 }
 
-.template__Email--input:hover {
+.template__email--input:hover {
   border: solid 2px;
   border-color: rgba(160, 174, 192);
 }
@@ -813,7 +814,7 @@ p {
 }
 
 .footer__row {
-  padding-top: 3rem;
+  padding-top: 1rem;
   margin: 0 32px 0 32px;
 }
 
@@ -990,6 +991,13 @@ p {
     margin: 4rem 0 0 0;
   }
 
+  .plans{
+    padding-bottom: 64px;
+  }
+
+#footer{
+  margin-top: 140px;
+}
 
 }
 
@@ -1041,7 +1049,7 @@ p {
     margin-right: auto;
   }
 
-  .template__Email--input {
+  .template__email--input {
     min-width: 448px;
   }
 
@@ -1205,7 +1213,6 @@ p {
   margin: 16px 0;
   }
 
-
 }
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
@@ -1221,15 +1228,17 @@ p {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    min-width: max-content;
+    
+    width: 100%;
     margin: 0;
 
   }
 
-  .template__Email--input {
+  .template__email--input {
     min-height: 60px;
     width: 100%;
     min-width:unset;
+    text-align: center;
   }
 
 .template__getstarted--btn{
