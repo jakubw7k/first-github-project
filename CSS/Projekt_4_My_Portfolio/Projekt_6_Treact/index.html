@@ -36,12 +36,12 @@
           <i class="fas fa-times" aria-hidden="true"></i>
           </button>
           <ul class="menu__links">
-            <li><a href="" target="_blank" class="menu__link menu__link--hover-effect">About</a></li>
-            <li><a href="" target="_blank" class="menu__link menu__link--hover-effect">Blog</a></li>
-            <li><a href="" target="_blank" class="menu__link menu__link--hover-effect">Pricing</a></li>
-            <li><a href="" target="_blank" class="menu__link menu__link--hover-effect">Contact Us</a></li>
-            <li><a href="" target="_blank" class="menu__link menu__link--hover-effect">Login</a></li>
-            <button href="#" target="_blank" class="menu__logo--btn button-purple link__hover-effect--lightpurple">Sign
+            <li class="menu__list"><a href=""  class="menu__link menu__link--hover-effect" onclick="closeMenu()">About</a></li>
+            <li class="menu__list"><a href=""  class="menu__link menu__link--hover-effect" onclick="closeMenu()">Blog</a></li>
+            <li class="menu__list"><a href=""  class="menu__link menu__link--hover-effect" onclick="closeMenu()">Pricing</a></li>
+            <li class="menu__list"><a href="" class="menu__link menu__link--hover-effect" onclick="closeMenu()">Contact Us</a></li>
+            <li class="menu__list"><a href="" class="menu__link menu__link--hover-effect" onclick="closeMenu()">Login</a></li>
+            <button href="#" class="menu__logo--btn button-purple link__hover-effect--lightpurple" onclick="closeMenu()">Sign
               Up</button>
           </ul>
         </div>
@@ -55,10 +55,9 @@
         <h1>
           Beautiful React Templates <span class="text--color"> for you. </span>
         </h1>
-        <p class="template__paragraph">
+        <p class="template__paragraph--first">
           Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages
-          and
-          components.
+          and components.
         </p>
         <div class="template__action--fields">
           <input class="template__Email--input" type="email" placeholder="Your E-mail Address">
@@ -66,7 +65,7 @@
             Started</button>
         </div>
         <div class="template__twoBottomColumns">
-          <p>
+          <p class="template__paragraph--second">
             OUR TRUSTED CUSTOMERS
           </p>
           <img class="customers__logo" src="./Unterlagen/customers-logo-strip.png" alt="">
