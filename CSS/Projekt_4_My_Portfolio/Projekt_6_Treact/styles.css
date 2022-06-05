@@ -7,6 +7,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html {
+  scroll-behavior:smooth;
+}
+
 body {
   padding: 32px;
 }
@@ -55,7 +59,7 @@ p {
 .button-purple {
   background-color: rgb(100, 21, 255);
   border-color: transparent rgb(100, 21, 255);
-  border: 1px solid;
+  border: 2px transparent;
   font-weight: 600;
   color: white;
   border-radius: 100px;
@@ -68,9 +72,6 @@ p {
   background-color: rgba(80, 17, 204)
 }
 
-.button-purple:active {
-  border: solid rgb(117, 181, 218);
-}
 
 /* MENU BACKDROP */
 
@@ -205,7 +206,8 @@ p {
   color: rgba(100, 21, 255, var(--tw-text-opacity));
   --tw-border-opacity: 1;
   border-bottom: 2px solid;
-  border-color: rgba(100, 21, 255, var(--tw-border-opacity))
+  border-color: rgba(100, 21, 255, var(--tw-border-opacity));
+  cursor: pointer;
 }
 
 .nav__link--login {
@@ -561,16 +563,13 @@ p {
   height: 100vh;
   text-align: center;
   position: relative;
-}
-
-#plans {
+  padding-top: 3rem;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 6rem;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 0rem;
   padding-bottom: 10rem;
   min-height: 932px;
 }
@@ -927,6 +926,7 @@ p {
 .threeColumns__socialLink:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(203, 213, 224, var(--tw-bg-opacity));
+  cursor: pointer;
 }
 
 /*  SMALLER MONITORS 
