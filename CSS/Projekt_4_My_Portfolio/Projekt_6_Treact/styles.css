@@ -1004,6 +1004,10 @@ font-size: 14px;
   display:none;
 }
 
+.plan__leftSide, .plan__middleSide, .plan__rightSide {
+  margin: 4rem 0 0 0 ;
+}
+
 
 }
 
@@ -1105,10 +1109,35 @@ h1{
  .qualityWork__head--paragraph{
    font-size: 14px;
  }
+
+ #getStarted {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+ }
     
  .getStarted__row{
    flex-direction: column;
+   height: 100vh;
  }
+
+ .getStarted__leftSide{
+   width: 100%; 
+   max-width: 28rem;
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+ .getStarted__rightSide{
+   margin: 0;
+   max-width: 100%;
+   align-items: center;
+   margin-top: 4rem;
+ }
+.getStarted__head{
+  text-align: center;
+  width: 100%;
+  font-size: 36px;
+}
 
  .getStarted__listItem{
    align-items: center;
@@ -1123,11 +1152,16 @@ h1{
 
  h6{
  }
- 
+
  .getStarted__paragraph{
    font-size: 14px;
    font-weight: 500;
    margin-top: 12px;
    line-height: 2;
+ }
+
+ #plans{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
  }
 }
