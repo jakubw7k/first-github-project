@@ -1211,6 +1211,7 @@ p {
 
   .nav__logo, .footer__paragraph, .threeColumns__socialLinks {
   margin: 16px 0;
+  text-align: center;
   }
 
 }
@@ -1218,6 +1219,18 @@ p {
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 
 @media (max-width: 620px) {
+
+
+.service{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.service__description{
+  margin: 1rem 0 0 0;
+}
 
   .template__leftside{
     align-items: center;
@@ -1241,6 +1254,18 @@ p {
     text-align: center;
   }
 
+ h2{
+   font-size: 36px;
+ }
+
+  .getStarted__rightSide{
+    margin-top: 1.5rem;
+  }
+
+.plans__head--paragraph{
+  font-size: 16px;
+}
+
 .template__getstarted--btn{
   min-width: max-content;
   margin:16px 0px;
@@ -1251,5 +1276,13 @@ p {
   min-width: unset;
   
 }
+
+.price, .price__middle{
+  font-size: 36px;
+}
+  .footer__column{
+    width: 50%;
+  }
+  
 
 }
