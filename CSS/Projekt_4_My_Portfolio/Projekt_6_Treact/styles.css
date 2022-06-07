@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  padding: 32px;
+  padding: 32px 32px 0 32px;
 }
 
 row {
@@ -134,7 +134,7 @@ p {
 
 .menu__list {
   padding: 16px 0;
-  margin: 13%;
+  margin: 12%;
 }
 
 .menu__link {
@@ -149,7 +149,7 @@ p {
   font-size: 18px;
   padding: 12px 36px;
   border-color: transparent;
-  margin: 13% 0;
+  margin: 12% 0;
 }
 
 
