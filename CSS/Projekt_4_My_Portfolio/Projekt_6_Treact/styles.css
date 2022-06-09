@@ -811,7 +811,7 @@ p {
 
 #footer {
   background-color: rgb(100, 21, 255);
-  margin: 64px 0px 0 0px;
+  margin: 64px -32px 0 -32px;
   height: 500px;
 }
 
