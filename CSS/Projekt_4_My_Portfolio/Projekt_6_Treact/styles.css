@@ -42,6 +42,7 @@ h2 {
   color: rgb(36, 62, 99);
   font-size: 48px;
   font-weight: 900;
+  letter-spacing: 0.025em;
 }
 
 h6 {
@@ -157,7 +158,6 @@ p {
 /* LANDING / NAV */
 
 .nav__container {
-  height: 60px;
   display: flex;
   margin: 0px auto;
   padding: 0;
@@ -171,6 +171,7 @@ p {
   display: flex;
   justify-content: space-around;
   margin-right: 24px;
+  padding: 0 0 4px 0;
   align-items: center;
   font-weight: 900;
   color: #243E63;
@@ -191,13 +192,14 @@ p {
   justify-content: space-around;
   align-items: center;
   font-weight: 600;
+ 
 }
 
 .nav__link {
-  margin: 0 20px;
+  margin: 0 24px;
   color: rgb(36, 62, 99);
-  border-bottom: 10px solid transparent;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
+  letter-spacing: 0.05em;
 }
 
 .link__hover-effect:hover,
@@ -219,7 +221,7 @@ p {
 
 .nav__logo--btn {
   font-size: 14px;
-  padding: 8px 24px;
+  padding: 12px 36px;
   border-color: transparent;
 }
 
@@ -378,6 +380,7 @@ p {
   text-align: center;
   max-width: 480px;
   font-weight: normal;
+  color: #7c7c7c;
 }
 
 .services__subheading {
@@ -427,7 +430,7 @@ p {
   font-size: 16px;
   font-weight: 500;
   line-height: 2;
-
+  color: #7c7c7c;
 }
 
 .title {
@@ -469,6 +472,7 @@ p {
   font-size: 18px;
   font-weight: 500;
   max-width: 576px;
+  line-height: 1.5;
 }
 
 .qualityWork__learnMore--btn {
@@ -512,11 +516,12 @@ p {
 }
 
 .getStarted__rightSide {
-  max-width: 50%;
+  width: 50%;
+  max-width: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 0 0 40px;
+  margin: 0 0 0 64px;
   padding: 32px 0;
 }
 
@@ -555,6 +560,7 @@ p {
   font-size: 14px;
   margin: 12px 0 0;
   font-weight: 400;
+  line-height: 2;
 }
 
 /* PLANS */
@@ -621,12 +627,10 @@ p {
   border-radius: 8px;
   position: relative;
   flex-direction: column;
-
   text-align: center;
-  margin-top: 40px;
   color: #1A202c;
   max-width: 24rem;
-  margin: 40px auto 0 0;
+  margin: 80px auto 0 0;
   padding: 8px 32px 0 32px;
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -743,7 +747,7 @@ p {
 .plan__middleSide {
   background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
   color: white;
-  margin: 40px 40px 0 0;
+  margin-right:40px;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -808,13 +812,13 @@ p {
 
 #footer {
   background-color: rgb(100, 21, 255);
-  margin: 64px -32px -34px -32px;
+  margin: 64px -32px 0 -32px;
   height: 500px;
 }
 
 .footer__row {
   padding-top: 1rem;
-  margin: 0 32px 0 32px;
+  margin: 0 32px;
 }
 
 .footer__container {
@@ -845,7 +849,7 @@ p {
 }
 
 .column__unorderedList {
-  margin-top: 1.5rem;
+  margin-top: 12px;
 }
 
 .column__link {
