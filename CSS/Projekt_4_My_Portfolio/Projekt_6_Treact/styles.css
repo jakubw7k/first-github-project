@@ -233,7 +233,7 @@ p {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10% 0;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
 }
 
 .template__row {
@@ -367,7 +367,7 @@ p {
   max-width: 1024px;
   margin: 0 auto;
   text-align: center;
-  height: calc(100vh);
+  min-height: calc(100vh);
 }
 
 .services__head--subheading {
@@ -441,7 +441,7 @@ p {
 /* QUALITY WORK */
 
 .qualityWork__container {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .qualityWork__row {
@@ -496,7 +496,7 @@ p {
 /* GET STARTED */
 
 .getStarted__container {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .getStarted__row {
@@ -566,7 +566,7 @@ p {
 /* PLANS */
 
 #plans {
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   position: relative;
   padding-top: 3rem;
@@ -576,7 +576,6 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10rem;
-  min-height: 932px;
 }
 
 .plans__head {
@@ -812,7 +811,7 @@ p {
 #footer {
   background-color: rgb(100, 21, 255);
   margin: 64px -32px 0 -32px;
-  height: 500px;
+  min-height: 500px;
 }
 
 .footer__row {
@@ -955,7 +954,7 @@ p {
     flex-direction: column;
     margin: 0 auto;
     justify-content: stretch;
-    height: calc(100vh + 100px);
+    min-height: calc(100vh + 100px);
   }
 
   .template__row {
@@ -973,7 +972,7 @@ p {
   }
 
   .services__container {
-    height: 100%;
+    min-height: 100%;
   }
 
   #plans {
@@ -1073,7 +1072,7 @@ p {
   }
 
   .services__container {
-    height: 100%;
+    min-height: 100%;
   }
 
   .services {
@@ -1091,7 +1090,6 @@ p {
     flex-direction: column-reverse;
     justify-content: center;
     min-height: 100vh;
-    height: 100vh;
   }
 
   .qualityWork__rightSide {
@@ -1123,7 +1121,7 @@ p {
 
   .getStarted__row {
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .getStarted__leftSide {
@@ -1177,7 +1175,7 @@ p {
   }
 
   #footer {
-    height: 100%;
+    min-height: 100%;
     margin-top: 0;
   }
 
@@ -1224,7 +1222,7 @@ p {
 @media (max-width: 620px) {
 
   #template__container {
-    height: 100%;
+    min-height: 100%;
     padding-top: 0;
     margin-top: 0;
   }
