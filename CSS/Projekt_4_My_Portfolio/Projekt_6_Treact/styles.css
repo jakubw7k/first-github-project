@@ -941,7 +941,6 @@ p {
 
   .allPlans {
     flex-direction: column;
-    min-height: 1900px;
   }
 
 }
@@ -950,6 +949,20 @@ p {
 /* TABLETS, SMALLER MONITORS */
 
 @media (max-width: 1024px) {
+  #template__container{
+    padding: 0;
+    padding-top: 50px;
+}
+
+  #services,
+  #qualityWork,
+  #getStarted,
+  #plans {
+    padding: 0;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
   #template__container {
     flex-direction: column;
     margin: 0 auto;
@@ -975,13 +988,18 @@ p {
     min-height: 100%;
   }
 
+  .qualityWork__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   #plans {
     min-height: 2050px;
   }
 
   .allPlans {
     flex-direction: column;
-    min-height: 1900px;
   }
 
   .btn__menu {
@@ -999,30 +1017,11 @@ p {
     margin: 4rem 0 0 0;
   }
 
-  .plans {
-    padding-bottom: 64px;
-  }
-
-  #footer {
-    margin-top: 200px;
-    /*Damit der "div.plan__rightSide" nicht in den Footer hineinrutscht */
-  }
-
 }
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
 
 @media (max-width: 772px) {
-
-
-  #template__container,
-  #services,
-  #qualityWork,
-  #getStarted,
-  #plans {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
 
   .template__leftside {
     width: 100%;
@@ -1162,10 +1161,6 @@ p {
     line-height: 2;
   }
 
-  #plans {
-    min-height: 2340px;
-  }
-
   .plan__leftSide,
   .plan__middleSide,
   .plan__rightSide {
@@ -1223,7 +1218,7 @@ p {
 
   #template__container {
     min-height: 100%;
-    padding-top: 0;
+    padding-top: 12px;
     margin-top: 0;
   }
 
@@ -1304,6 +1299,10 @@ p {
 
   .footer__column {
     width: 50%;
+  }
+
+  .footer__threeColumns{
+    padding-top: 40px;
   }
 
 
