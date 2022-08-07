@@ -1,5 +1,9 @@
-function lastElementOfArray(arr){
-return arr[arr.length - 1];
+function reverseString(str){
+    let reversedString='';
+    for (let i = 0; i < str.length; ++i) {
+        reversedString =  str[i] + reversedString;  
+    }
+    return reversedString;
 }
 
-console.log(lastElementOfArray([1,2,3,40]))
+console.log(reverseString("Jakub"));
