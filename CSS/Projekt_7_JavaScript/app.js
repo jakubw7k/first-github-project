@@ -1,9 +1,13 @@
-function reverseString(str){
-    let reversedString='';
-    for (let i = 0; i < str.length; ++i) {
-        reversedString =  str[i] + reversedString;  
-    }
-    return reversedString; 
-}
+async function firstSixIncomplete(userId) {
 
-console.log(reverseString("Jakub"));
+        const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
+
+        const result = await promise.json()
+
+        const incompleteTodos = result.filter(element => element.completed === false).slice(0,6);
+
+        console.log(incompleteTodos)
+
+    }
+
+firstSixIncomplete(6);
