@@ -244,7 +244,7 @@ nav {
 
 .fa-adjust {
     font-size: 20px;
-  }
+}
 
 
 /*
@@ -289,6 +289,7 @@ nav {
     position: absolute;
     top: 50%;
     left: 90px;
+    /* es ist unten versteckt und zwar so, dass man es nicht sehen kann mit translateY 100%*/
     transform: translateY(100%);
     opacity: 0;
     transition: opacity 300ms, transform 450ms ease;
