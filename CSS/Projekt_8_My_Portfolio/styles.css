@@ -526,7 +526,7 @@ nav {
 .section__title {
     text-align: center;
     font-size: 48px;
-    margin-bottom: 60px;
+    margin-bottom: 120px;
 }
 
 .project {
@@ -535,14 +535,16 @@ nav {
 
 .project__img {
     width: 100%;
+    justify-content: center;
     transition: all 600ms ease;
 }
 
 .project__wrapper {
-    position: relative;
+    display: flex;
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);/* 0px offset horizontally, 20px offset vertically, 80px blur */
     border-radius: 20px;
-    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
     overflow: hidden;
+    position: relative;  /* so wird der "before2 in dem project__wrapper wegen Elternverbindung*/
 }
 
 .project__wrapper:hover .project__description {
