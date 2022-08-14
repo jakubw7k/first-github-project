@@ -242,6 +242,9 @@ nav,
     position: absolute;
     bottom: 32px;
     right: 40px;
+    z-index: 100;
+    position: fixed;
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
 
 }
 
@@ -750,4 +753,21 @@ width = 80 vw
         display: none;
     }
 
+    .project__description--para {
+        display: none;
+    }
+    .project__description {
+        left:0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .project__description--sub-title {
+        margin-bottom: 8px;
+    }
+
+    .modal__half {
+        padding: 40px;
+    }
 }
