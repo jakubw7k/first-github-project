@@ -726,6 +726,14 @@ width = 80 vw
     font-size: 20px;
 }
 
+.project__description--para {
+    display: none;
+}
+
+.project__description--links {
+    margin-top: 12px;
+}
+
 .modal {
     top:0;
     left: 0;
@@ -757,10 +765,9 @@ width = 80 vw
     .nav__link:first-child {
         display: none;
     }
+    
 
-    .project__description--para {
-        display: none;
-    }
+    
     .project__description {
         left:0;
         padding: 0;
