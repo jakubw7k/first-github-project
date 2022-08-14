@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
                 <img id="personal-logo" src="./Unterlagen/JW Logo.png" alt="">
@@ -39,14 +39,14 @@
                 link__hover-effect--black
                 ">Projekte</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                         nav__link--anchor 
                         link__hover-effect
                         link__hover-effect--black
                     ">Kontakt</a>
                 </li>
-                <li class="nav__link click">
+                <li class="nav__link click" onclick="toggleContrast()">
                     <a href="#" class="
                         nav__link--anchor 
                         link__hover-effect
@@ -60,11 +60,11 @@
                 <h1 class="title">Hey</h1>
                 <h1 class="title title--secondary orange">Ich heiße Jakub.</h1>
                 <p class="header__para">
-                    Ich bin ein angehende <b class="orange">Frontend Softwareentwickler</b> mit einer starken
+                    Ich bin ein angehender <b class="orange">Frontend Softwareentwickler</b> mit einer starken
                     Leidenschaft für die Erstellung von Webanwendungen
                     mit großartigen Benutzererfahrungen.
                     <br>
-                    Hier gibt es etwas mehr <b class="orange click">über mich</b>.
+                    Hier gibt es etwas mehr <b class="orange click" onclick="toggleModal()">über mich</b>.
                 </p>
                 <div class="social__list">
                     <a href="https://www.linkedin.com/in/jakub-filip-wachowiak-591441176/" target="_blank"
@@ -81,7 +81,7 @@
             </div>
         </header>
         <a href="#">
-            <button class="mail__btn click"><i class="fas fa-envelope"></i>
+            <button class="mail__btn click" onclick="toggleModal()"><i class="fas fa-envelope"></i>
             </button>
         </a>
         <a href="#projects" class="scroll">
@@ -91,13 +91,15 @@
             <div class="modal__half modal__about">
                 <h3 class="modal__title modal__title--about">Here is a bit about me</h3>
                 <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
-                <p class="modal__para">I'm a 21 year-old Australian <b class="orange"> frontend software engineer </b>
+                <p class="modal__para">I'm a 27 year-old German <b class="orange"> frontend software engineer </b>
                     with experience
-                    developing websites with great <b class="orange">user experiences </b>.</p>
-                <br>
-                I currently currently work on extremely difficult engineering problems and learn from a team consisting
-                of some of the most <b class="orange">talented </b> and <b class="orange">experienced</b> software
-                engineers every day.
+                    developing websites with great <b class="orange">user experiences </b>.
+                    <br>
+                    I currently work on extremely difficult engineering problems and learn from a team
+                    consisting
+                    of some of the most <b class="orange">talented </b> and <b class="orange">experienced</b> software
+                    engineers every day.
+                </p>
                 <div class="modal__languages">
                     <figure class="modal__language">
                         <img class="modal__language--img"
@@ -138,6 +140,7 @@
                 </div>
             </div>
             <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
                 <h3 class="modal__title modal__title--contact">
                     Let's have a chat!
                 </h3>
@@ -147,15 +150,15 @@
                 <form id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
                         <label class="form__item--label">Name</label>
-                        <input class="input" name="user_name" type="text" ></input>
+                        <input class="input" name="user_name" type="text"></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Email</label>
-                        <input class="input" name="user_email" type="email" ></input>
+                        <input class="input" name="user_email" type="email"></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Message</label>
-                        <textarea class="input" name="message" type="text" ></textarea>
+                        <textarea class="input" name="message" type="text"></textarea>
                     </div>
                     <button id="cotnact__submit" class="form__submit">
                         Send it my way
@@ -168,8 +171,16 @@
                     Thanks for the message! Looking forward to speaking to you soon.
                 </div>
             </div>
-            <i class="fas fa-times modal__exit click"></i>
         </div>
+        <img src="./Unterlagen/semi circle.svg" class="shape shape--0">
+        <img src="./Unterlagen/circle.svg" class="shape shape--1">
+        <img src="./Unterlagen/squiggly.svg" class="shape shape--2">
+        <img src="./Unterlagen/circle.svg" class="shape shape--3">
+        <img src="./Unterlagen/triangle.svg" class="shape shape--4">
+        <img src="./Unterlagen/circle.svg" class="shape shape--5">
+        <img src="./Unterlagen/squiggly.svg" class="shape shape--6">
+        <img src="./Unterlagen/circle.svg" class="shape shape--7">
+        <img src="./Unterlagen/semi circle.svg" class="shape shape--8">
     </section>
 
     <section id="projects">
