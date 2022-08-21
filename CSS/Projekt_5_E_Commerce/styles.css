@@ -331,6 +331,10 @@ FEATURES
   background-color: rgba(115, 66, 214, 0.1);
 }
 
+#recent{
+  background-color: rgb(245, 245, 245 , 0.5);
+}
+
 .books {
   display: flex;
   flex-wrap: wrap;
@@ -352,6 +356,7 @@ FEATURES
   /* Added after tutorial to maintain image aspect ratio */
   object-fit: contain;
   object-position: left;
+  transform: scale(1.00);
 }
 
 .book__img--wrapper {
