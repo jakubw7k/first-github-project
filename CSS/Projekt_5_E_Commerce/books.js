@@ -83,7 +83,7 @@ function getBooks() {
         {
           id: 1,
           title: "Crack the Coding Interview",
-          url: "unterlagen/crack the coding interview.png",
+          url: "Unterlagen/crack the coding interview.png",
           originalPrice: 49.95,
           salePrice: 14.95,
           rating: 4.5,
@@ -91,7 +91,7 @@ function getBooks() {
         {
           id: 2,
           title: "Atomic Habits",
-          url: "unterlagen/atomic habits.jpg",
+          url: "Unterlagen/atomic habits.jpg",
           originalPrice: 39,
           salePrice: null,
           rating: 5,
@@ -99,7 +99,7 @@ function getBooks() {
         {
           id: 3,
           title: "Deep Work",
-          url: "unterlagen/deep work.jpeg",
+          url: "Unterlagen/deep work.jpeg",
           originalPrice: 29,
           salePrice: 12,
           rating: 5,
@@ -107,7 +107,7 @@ function getBooks() {
         {
           id: 4,
           title: "The 10X Rule",
-          url: "unterlagen/book-1.jpeg",
+          url: "Unterlagen/book-1.jpeg",
           originalPrice: 44,
           salePrice: 19,
           rating: 4.5,
@@ -115,7 +115,7 @@ function getBooks() {
         {
           id: 5,
           title: "Be Obsessed Or Be Average",
-          url: "unterlagen/book-2.jpeg",
+          url: "Unterlagen/book-2.jpeg",
           originalPrice: 32,
           salePrice: 17,
           rating: 4,
@@ -123,7 +123,7 @@ function getBooks() {
         {
           id: 6,
           title: "Rich Dad Poor Dad",
-          url: "unterlagen/book-3.jpeg",
+          url: "Unterlagen/book-3.jpeg",
           originalPrice: 70,
           salePrice: 12.5,
           rating: 5,
@@ -131,7 +131,7 @@ function getBooks() {
         {
           id: 7,
           title: "Cashflow Quadrant",
-          url: "unterlagen/book-4.jpeg",
+          url: "Unterlagen/book-4.jpeg",
           originalPrice: 11,
           salePrice: 10,
           rating: 4,
@@ -139,7 +139,7 @@ function getBooks() {
         {
           id: 8,
           title: "48 Laws of Power",
-          url: "unterlagen/book-5.jpeg",
+          url: "Unterlagen/book-5.jpeg",
           originalPrice: 38,
           salePrice: 17.95,
           rating: 4.5,
@@ -147,7 +147,7 @@ function getBooks() {
         {
           id: 9,
           title: "The 5 Second Rule",
-          url: "unterlagen/book-6.jpeg",
+          url: "Unterlagen/book-6.jpeg",
           originalPrice: 35,
           salePrice: null,
           rating: 2,
@@ -155,7 +155,7 @@ function getBooks() {
         {
           id: 10,
           title: "Your Next Five Moves",
-          url: "unterlagen/book-7.jpg",
+          url: "Unterlagen/book-7.jpg",
           originalPrice: 40,
           salePrice: null,
           rating: 4,
@@ -163,7 +163,7 @@ function getBooks() {
         {
           id: 11,
           title: "Mastery",
-          url: "unterlagen/book-8.jpeg",
+          url: "Unterlagen/book-8.jpeg",
           originalPrice: 30,
           salePrice: null,
           rating: 4.5,
