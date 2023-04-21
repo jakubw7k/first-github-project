@@ -9,7 +9,8 @@ async function onSearchChange(event) {
 async function renderPosts(id) {
     const posts = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)
     const postsData = await posts.json();
-    postListEl.innerHTML = postsData.map(post => postHTML(post)).join(''); //postsData.map(post =>  bedeutet so viel wie wir mappen über jeden Objekt von postsData und für jedes Element (aktuelles Element) "post" machen wir:
+    //postsData.map(post =>  bedeutet so viel wie wir mappen über jeden Objekt von postsData und für jedes Element (aktuelles Element) "post" machen wir:
+    postListEl.innerHTML = postsData.map(post => postHTML(post)).join(''); 
 }
 
 function postHTML(post) {
